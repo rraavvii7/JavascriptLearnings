@@ -20,5 +20,5 @@ Array.prototype.myCustomMap = function (cb) {
 }
 
 const arr2 = [1, 2, 3, 4, 5];
-const multiplyByTwo = arr2.myCustomMap((item) => item * 2);
+const multiplyByTwo = arr2.myCustomMap((currentItem, index, array) => currentItem * 2);
 console.log(multiplyByTwo);
